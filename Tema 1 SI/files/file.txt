@@ -1,0 +1,8 @@
+2. Pentru a initia o sesiune de comunicare securizata nodul A trimite un mesaj catre B
+in care comunica modul de operare (ECB sau CBC), cerand in acelasi timp nodului
+KM cheia de criptare. Acesta genereaza cheia K in mod random, cu ajutorul unei
+librarii criptografice, si apoi o cripteaza ca un singur bloc cu AES folosind cheia K’,
+dupa care o trimite nodului A. Dupa ce A primeste cheia criptata de la KM, acesta o
+trimite mai departe nodului B. A si B vor decripta cheia K pentru a incepe
+comunicarea. De asemenea nodul B va trimite catre A un mesaj de incepere a
+comunicarii.
